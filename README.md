@@ -23,20 +23,20 @@ Figure above shows a general information with regards to the dataset. As can be 
 The dataset consisted of both numerical and nominal values.
 
 *Numerical*
-•	Age
-•	Final_Weight
-•	Education_Num
-•	Capital_Gain
-•	Capital_Loss
-•	Hours_per_week
+-	Age
+-	Final_Weight
+-	Education_Num
+-	Capital_Gain
+-	Capital_Loss
+-	Hours_per_week
 
 *Nominal*
-•	WorkClass
-•	Education
-•	Marital_Status
-•	Occupation
-•	Relationship
-•	Race
-•	Sex
-•	Native_Country
-•	Class
+-	WorkClass
+-	Education
+-	Marital_Status
+-	Occupation
+-	Relationship
+-	Race
+-	Sex
+-	Native_Country
+-	Class
