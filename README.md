@@ -1,11 +1,11 @@
 # Income-Classification-Model
 A Semi-Supervised classification model predicting if an individual's annual income is more or less than $50K
 
-##Goal
+## Goal
 
 The goal of this project is to create a ML model that predicts if a person’s salary will be above or below 50K dollars
 
-##Preprocessing Phase
+## Preprocessing Phase
 
 Three different datasets were provided for the classification part of this project. 
 - test-project.data
