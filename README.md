@@ -104,8 +104,44 @@ For the occupation the last 5 categories were grouped under one:
 -	Private House Service
 -	Armed Forces
 
+*Frequency per Relationship Category*
 
+![image](https://user-images.githubusercontent.com/82097084/165748965-14569e90-a29c-4835-9b6a-ac5470a2404f.png)
 
+For “Marital Status” only the category “Married” remained all the rest of the categories were grouped under one category “other”.
 
+*Frequency per Race Category*
+
+![image](https://user-images.githubusercontent.com/82097084/165749041-6d764a7b-aff7-4fed-b97c-3f2d8f864799.png)
+
+For Race only the category “White” remained all the rest of the categories were grouped under one category “other”.
+
+*Frequency per Workclass Category*
+
+![image](https://user-images.githubusercontent.com/82097084/165749091-a18920ae-511f-454b-a8e7-cb8c05a58a24.png)
+
+For “Workclass” only the category “Private” remained all the rest of the categories were grouped under one category “other”.
+
+Because sex and class had only two categories each only a single remained (Female was dropped and Class_<50K was also dropped).
+The result was that the dimensions of the new dataset decreased significantly from (9245,105) to (9245, 33). 
+As a result, 92 columns were removed from the dataset.
+
+**Normalizing the dataset**
+
+Because of the nature of the dataset there were some variables with high values (ex. Final Weight, Capital Gain) that could be even in thousands while all the categorical values had been transformed to be either 0 or 1. 
+That is why a normalization of the dataset was performed on the numerical part of the dataset in order to make all numerical values have a range between zero and one (0 - 1).
+To achieve that the dataset was split into two parts.
+-	Df_categorical
+-	Df_numerical
+
+Df_categorical was a dataframe that consisted of all the categorical variables after using the one hot encoder
+Df_numerical on the other hand consisted of all the numerical variables (columns). The normalization was performed only on Df_numerical and not on Df_categorical
+after that all the variables in the new Df_numerical after performing the normalization had values between 0 – 1. 
+The new Df_numerical and the Df_categorical were concatenated (axis = 1, was used as a hyperparameter in order to concatenate the two dataframes horizontally).
+The same exactly methodolofgy was followed for the Test dataset as well. The new dataframes had the final form that was needed for the ML models to be trained. 
+
+They were saved in the local folders with the following names: 
+-	“Processed_Train_Data.csv”
+-	“Processed_Test_Data.csv”
 
 
