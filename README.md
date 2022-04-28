@@ -238,13 +238,11 @@ As well as the ROC Curve is order to have a visual representation of the models 
 |Model|Best Parameters|Precision|Recall|F1|
 |---------------|---------------|---------------|---------------|---------------|
 |ANN|activation: 'tanh','alpha': 0.05,'hidden_layer_sizes': (15, 10, 5, 3),'max_iter': 200|0,75|0,82|0,77|
-DT	criterion': 'entropy', 
-'max_depth': 10	0,73	0,8	0,74
-SVM	C': 100, 
-'kernel': 'rbf'	0,73	0,8	0,74
-KNN	n_neighbors: 7	0,72	0,78	0,73
-NB		0,73	0,79	0,74
-RF	n_estimators': 25	0,74	0,8	0,75
+|DT|criterion': 'entropy', 'max_depth': 10|0,73|0,8|0,74|
+|SVM|C: 100, 'kernel': 'rbf'|0,73|0,8|0,74|
+|KNN|n_neighbors: 7|0,72|0,78|0,73|
+|NB|||0,73|0,79|0,74|
+|RF|n_estimators': 25|0,74|0,8|0,75|
 
 
 
