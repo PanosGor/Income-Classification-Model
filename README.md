@@ -144,4 +144,15 @@ They were saved in the local folders with the following names:
 -	“Processed_Train_Data.csv”
 -	“Processed_Test_Data.csv”
 
+**Unlabeled Dataset**
+
+The unlabeled-project.data were used for the Semi-Supervised solution. 
+The unlabeled dataset was processed by following the same methodology described above for the “Processed_Train_Data.csv”. 
+The new processed unlabeled dataset was saved locally with the name.
+-	Processed_Unlabeled_Data.csv
+The unlabeled-project.data dataset had a difference with regards to the train-project.data and the test-project.data datasets. 
+That difference was that the column “Native_Country” misses from the unlabeled-project.data. As a result, 
+for the three datasets to have the same exactly columns for the analysis, the “Native_Country” column was removed from the “Processed_Train_Data.csv” and the “Processed_Test_Data.csv”. The two new datasets were named.
+-	Processed_Test_Data_Without_Countries.csv
+-	Processed_Train_Data_Without_Countries.csv
 
