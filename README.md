@@ -194,6 +194,42 @@ More specifically the following combinations of hyperparameters were tried for e
 *RF (Random Forest)*
 -	'n_estimators':[5,10,25]
 
+**Ranking the features**
+
+The mutual information technique was used in order to rank the features with regards to the most important ones. Mutual information technique ranked its feature based on its correlation to the target variable (in this case annual salary above or below $50K). The features have been sorted in ascending order and the results are provided below:
+-	Rank 1: Education_ Some-college with corr 0.0
+-	Rank 2: Occupation_ Sales with corr 0.0
+-	Rank 3: Occupation_ Transport-moving with corr 0.0
+-	Rank 4: Native_Country_ United-States with corr 0.0
+-	Rank 5: Education_ Assoc-voc with corr 0.0003
+-	Rank 6: Education_ Assoc-acdm with corr 0.0009
+-	Rank 7: Occupation_ Craft-repair with corr 0.0029
+-	Rank 8: Occupation_ Adm-clerical with corr 0.0037
+-	Rank 9: Relationship_ Other-relative with corr 0.0044
+-	Rank 10: Race_ White with corr 0.007
+-	Rank 11: Occupation_ Prof-specialty with corr 0.0079
+-	Rank 12: Education_ Doctorate with corr 0.0082
+-	Rank 13: Workclass_ Private with corr 0.0091
+-	Rank 14: Relationship_ Not-in-family with corr 0.0133
+-	Rank 15: Final_Weight with corr 0.0134
+-	Rank 16: Occupation_ Machine-op-inspct with corr 0.0135
+-	Rank 17: Education_ HS-grad with corr 0.0138
+-	Rank 18: Education_ Bachelors with corr 0.0148
+-	Rank 19: Relationship_ Unmarried with corr 0.0151
+-	Rank 20: Relationship_ Wife with corr 0.0173
+-	Rank 21: Education_ Masters with corr 0.0174
+-	Rank 22: Sex_ Male with corr 0.0226
+-	Rank 23: Occupation_ Exec-managerial with corr 0.0229
+-	Rank 24: Occupation_ Other-service with corr 0.0237
+-	Rank 25: Relationship_ Own-child with corr 0.032
+-	Rank 26: Capital_Loss with corr 0.0336
+-	Rank 27: Hours_per_Week with corr 0.0424
+-	Rank 28: Education_Num with corr 0.0661
+-	Rank 29: Age with corr 0.0678
+-	Rank 30: Capital_Gain with corr 0.0827
+-	Rank 31: Relationship_ Husband with corr 0.0831
+-	Rank 32: Marital_Status_ Married-civ-spouse with corr 0.1046
+
 
 
 
