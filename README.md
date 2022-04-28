@@ -268,6 +268,23 @@ The explained variance ratio for components equal to 20 was 95%. The Precision, 
 |NB||0,66|0,67|0,66|
 |RF|'n_estimators': 25|0,61|0,56|0,56|
 
+![image](https://user-images.githubusercontent.com/82097084/165752567-e78b77b7-9120-4990-a190-f60663407387.png)
+
+As can be observed from the ROC Curves the accuracy for all models after performing the PCA was reduced significantly. 
+More specifically according to the results from table 1 and table 2 the Precision, Recall and F1 scores for all models have been reduced.
+The comparison for the F1 scores is summarized in the following table.
+
+|Model|F1 before PCA|F1 after PCA|
+|ANN|0,77|0,53|
+|DT|0,74|0,61|
+|SVM|0,74|0,62|
+|KNN|0,73|0,61|
+|NB|0,74|0,66|
+|RF|0,75|0,56|
+
+
+
+
 
 
 
