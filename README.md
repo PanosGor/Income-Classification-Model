@@ -21,3 +21,22 @@ The preprocessing phase includes all the steps in order to clear the datasets fr
 
 Figure above shows a general information with regards to the dataset. As can be seen the dataset consisted of 10000 rows and 15 different columns. 
 The dataset consisted of both numerical and nominal values.
+
+*Numerical*
+•	Age
+•	Final_Weight
+•	Education_Num
+•	Capital_Gain
+•	Capital_Loss
+•	Hours_per_week
+
+*Nominal*
+•	WorkClass
+•	Education
+•	Marital_Status
+•	Occupation
+•	Relationship
+•	Race
+•	Sex
+•	Native_Country
+•	Class
