@@ -156,3 +156,31 @@ for the three datasets to have the same exactly columns for the analysis, the ‚Ä
 -	Processed_Test_Data_Without_Countries.csv
 -	Processed_Train_Data_Without_Countries.csv
 
+**Model development**
+
+For training the models 6 different model types were used.
+-	Artificial Neural Networks
+-	Decision Trees
+-	Support Vector Machine
+-	Na√Øve Bayes
+-	K - Nearest Neighbors
+-	Random Forest
+
+**GridSearchCV**
+
+The GridSearchCV function from sklearn was used in order to try different combinations of hyperparameters for the models. 
+More specifically the following combinations of hyperparameters were tried for each model.
+
+*ANN (Artificial Neural Networks)*
+-	'hidden_layer_sizes': [(10,5), (10,5,3), (15,10,5,3)]
+-	'alpha': [0.0001, 0.05]
+-	'activation': ['tanh', 'relu']
+-	'max_iter':[200,400]
+
+
+
+
+
+
+
+
