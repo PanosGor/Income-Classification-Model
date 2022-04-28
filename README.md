@@ -314,6 +314,34 @@ the results for Under sampling are summarized below.
 |RF|n_estimators': 25|0,74|0,8|0,75|
 
 
+*Over Sampling*
+
+![image](https://user-images.githubusercontent.com/82097084/165754657-279617ef-ac03-4470-b3f8-ec140df85f39.png)
+
+|Model|Best Parameters|Precision|Recall|F1|
+|---------------|---------------|---------------|---------------|---------------|
+|ANN|	'activation': 'relu','alpha': 0.0001,'hidden_layer_sizes': (10, 5)|0,74|0,81|0,75|
+|DT|'criterion': 'gini','max_depth': 100|0,68|0,69|0,68|
+|SVM|'C': 100, 'kernel': 'rbf'|0,73|0,8|0,74|
+|KNN|n_neighbors': 1|0,71|0,71|0,71|
+|NB||0,73|0,79|0,74|
+|RF|n_estimators': 10|0,77|0,76|0,76|
+
+Again, no significant change to the F1 scores found.
+
+*SMOTE*
+
+![image](https://user-images.githubusercontent.com/82097084/165755204-665c88ad-6be1-4645-beb6-8805e5304c16.png)
+
+|Model|Best Parameters|Precision|Recall|F1|
+|---------------|---------------|---------------|---------------|---------------|
+|ANN|'activation': 'tanh','alpha': 0.0001, 'hidden_layer_sizes': (15, 10, 5, 3)|0,74|0,8|0,76|
+|DT|criterion': 'gini','max_depth': 10|0,69|0,75|0,66|
+|SVM|C': 100, 'kernel': 'rbf'|0,74|0,8|0,75|
+|KNN|n_neighbors': 1|0,7|0,72|0,71|
+|NB||0,72|0,79|0,73|
+|RF|n_estimators': 25|0,72|0,78|0,73|
+
 
 
 
