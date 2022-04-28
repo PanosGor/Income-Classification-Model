@@ -283,7 +283,35 @@ The comparison for the F1 scores is summarized in the following table.
 |NB|0,74|0,66|
 |RF|0,75|0,56|
 
+**Handling Imbalance Data**
+In order to examine if any additional method could be used in order to improve the Precision, Recall and F1  scores of the models the training dataset 
+was analyzed in order to check if there are any imbalances with regards to the target variable (Annual Salary above or below $50K). 
+The results can be seen in the following graph.
 
+![image](https://user-images.githubusercontent.com/82097084/165753531-c23261e6-f682-49df-bbe4-5c0af80bf275.png)
+
+The graph above clearly indicates that 75% of the data belong to class 0 meaning that 75% of the observations make less than $50K per year while only the 25% of the observations made more then $50K per year. 
+This means that observations that belong to class 0 are overrepresented compared to observations belonging in class 1. 
+To address this issue and correct the imbalances three methods were used in order to correct the imbalances and improve the ratio so that both classes would be represented equally. 
+
+*Under Sampling*
+
+![image](https://user-images.githubusercontent.com/82097084/165753801-4cd1b3b3-ba4e-49f0-9924-e94a8ceb2bc5.png)
+
+*Models results after undersampling*
+
+All 6 models were trained and were evaluated again after resampling 
+(the train happened on the resampled train dataset and the evaluation was performed on the Test dataset which was NOT affected by the resampling method) 
+the results for Under sampling are summarized below.
+
+|Model|Best Parameters|Precision|Recall|F1|
+|---------------|---------------|---------------|---------------|---------------|
+|ANN|activation': 'tanh','alpha': 0.05, 'hidden_layer_sizes': (10, 5, 3)|0,75|0,81|0,76|
+|DT|criterion': 'entropy','max_depth': 10|0,72|0,79|0,73|
+|SVM|C': 100, 'kernel': 'rbf'|0,73|0,8|0,74|
+|KNN|n_neighbors': 5|0,71|0,77|0,72|
+|NB||0,73|0,79|0,75|
+|RF|n_estimators': 25|0,74|0,8|0,75|
 
 
 
