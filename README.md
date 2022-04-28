@@ -244,6 +244,29 @@ As well as the ROC Curve is order to have a visual representation of the models 
 |NB||0,73|0,79|0,74|
 |RF|n_estimators': 25|0,74|0,8|0,75|
 
+![image](https://user-images.githubusercontent.com/82097084/165751857-5d09bd4b-5039-4c4d-b028-9a7cf358195b.png)
+
+
+As can be seen from Table αβοωε ANN model had the highest F1 0.77 with the best parameters being:
+-	activation: 'tanh'
+-	alpha : 0.05
+-	hidden_layer_sizes: (15,10,5,3)
+-	max_iter: 200
+
+**Principal Component Analysis**
+
+PCA methodology was also used in order to reduce the dimensions of the training and testing datasets ever further in order to check if the Precision, Recall and F1  scores would be increased. 
+The number for the components was chosen to be equal to 20. 
+The explained variance ratio for components equal to 20 was 95%. The Precision, Recall and F1 scores are summarized in the following table.
+
+|Model|Best Parameters|Precision|Recall|F1|
+|---------------|---------------|---------------|---------------|---------------|
+|ANN|'activation': 'tanh','alpha': 0.0001,'hidden_layer_sizes': (15, 10, 5, 3),'max_iter': 400|0,53|0,53|0,53|
+|DT|'criterion': 'gini','max_depth': 10|0,6|0,61|0,61|
+|SVM|'C': 10,'kernel': 'sigmoid'|0,62|0,61|0,62|
+|KNN|n_neighbors': 9|0,64|0,6|0,61|
+|NB||0,66|0,67|0,66|
+|RF|'n_estimators': 25|0,61|0,56|0,56|
 
 
 
