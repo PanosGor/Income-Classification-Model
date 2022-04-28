@@ -378,6 +378,45 @@ The results are summarized in the following table.
 |NB||0,75|0,79|0,76|
 |RF|n_estimators': 25|0,8|0,77|0,78|
 
+![image](https://user-images.githubusercontent.com/82097084/165757520-1d4972d7-02c5-4d33-ac09-d93a278777e8.png)
+
+Both the ROC curves and the F1 scores shows a good accuracy for all models.
+
+**Label Propagation**
+
+The label propagation technique is a semi-supervised machine learning algorithm that assigns labels to previously unlabeled data points. 
+At the start of the algorithm, a (generally small) subset of the data points have labels (or classifications). 
+These labels are propagated to the unlabeled points throughout the course of the algorithm. 
+In this case the unlabeled dataset was concatenated to the training dataset and the training dataset was used in order to label the unlabeled data. 
+After that all 6 models were trained on the new dataset and the results were evaluated on the Test dataset (which was unaffected). 
+The results are summarized in the following table.
+
+|Model|Best Parameters|Precision|Recall|F1|
+|---------------|---------------|---------------|---------------|---------------|
+|ANN|'activation': 'relu', 'alpha': 0.0001,'hidden_layer_sizes': (15, 10, 5, 3)|0,77|0,75|0,76|
+|DT|'criterion': 'gini', 'max_depth': 10|0,78|0,75|0,76|
+|SVM|'C': 100, 'kernel': 'rbf'|0,72|0,74|0.73|
+|KNN|n_neighbors': 5|0,75|0,73|0,74|
+|NB||0,73|0,77|0,75|
+|RF|n_estimators': 25|0,78|0,74|0,76|
+
+![image](https://user-images.githubusercontent.com/82097084/165758058-cd605c4b-9bbd-4fe0-819d-8e80866adb26.png)
+
+
+The label propagation methodology did not improve the accuracy of the models significantly. 
+The following table shows a comparison of the semi-supervised and Supervised F1 scores.
+
+|Model|F1|F1 after Simple Method|F1 after Label Propagation|
+|---------------|---------------|---------------|---------------|
+|ANN|0,77|0,78|0,76|
+|DT|0,74|0,78|0,76|
+|SVM|0,74|0,78|0,74|
+|KNN|0,73|0,75|0,74|
+|NB|0,74|0,76|0,75|
+|RF|0,75|0,78|0,76|
+
+Overall, the Simple Semi Supervised methodology shows the best F1 results out of all the methods provided in this report so far. 
+But still the increase was only marginal 1-4% for most models
 
 
 
