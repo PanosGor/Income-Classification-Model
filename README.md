@@ -72,3 +72,40 @@ Pandas built in function get_dummies was used in order to make the transformatio
 The result was to transform the dataset successfully, but the dataset’s dimensions were increased significantly as well. 
 More specifically the dimensions before using get_dummies were (9245,15) while after using get_dummies the dimensions changed to (9245,105). 
 90 extra columns were added in the dataset.
+
+*Native_Country*
+
+*Frequency per Country*
+
+![image](https://user-images.githubusercontent.com/82097084/165746809-17e8ffd3-b82a-48a7-be58-f47e6025623c.png)
+
+The figure above shows a barplot of the frequency of the data for each country
+The first distribution that was checked was that of the native country as can be seen most of the values in the dataset belong to the United States. 
+As a result the rest of the countries could be grouped altogether under a single category leaving only 2 choices either the Native_country would “United States ” or not.
+
+The same exactly methodology was followed for the rest of the categorical values as well. 
+
+*Frequency per Education Category*
+
+![image](https://user-images.githubusercontent.com/82097084/165746973-ebc0ea32-c3a1-4896-a7d6-190180dadef0.png)
+
+As can be seen from the figure above the first four categories Highschool graduate, Bachelors, Some Certificate have the most values compared to the rest categories all the rest of the categories were grouped under a new category other. 
+Phd remained as a separate category even though not many observations were falling under, the reason was the importance of that a Phd title would have to a person’s salary
+
+*Frequency per Occupation Category*
+
+![image](https://user-images.githubusercontent.com/82097084/165747153-fb330ccd-1475-4c40-a244-429c0c722a7f.png)
+
+For the occupation the last 5 categories were grouped under one:
+-	Handlers – Cleaners
+-	Farming – fishing
+-	Tech support
+-	Protective Services
+-	Private House Service
+-	Armed Forces
+
+
+
+
+
+
