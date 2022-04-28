@@ -1,3 +1,22 @@
+#Goal 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 The "Preprocessing" folder contains information with regards to the preprocessing of the data
 
 "Training_Models.py" contains the model training
