@@ -275,6 +275,7 @@ More specifically according to the results from table 1 and table 2 the Precisio
 The comparison for the F1 scores is summarized in the following table.
 
 |Model|F1 before PCA|F1 after PCA|
+|--------|--------|--------|
 |ANN|0,77|0,53|
 |DT|0,74|0,61|
 |SVM|0,74|0,62|
