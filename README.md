@@ -342,7 +342,15 @@ Again, no significant change to the F1 scores found.
 |NB||0,72|0,79|0,73|
 |RF|n_estimators': 25|0,72|0,78|0,73|
 
+Overall, none of the re-sampling techniques used improved the accuracy of any of the models significantly. 
+The following table provides a summary for the F1 scores for all the methods provided previously.
 
-
-
+|Model|F1 before PCA|F1 after PCA|F1 after Under Sampling|F1 after Over Sampling|F1 after SMOTE|
+|---------------|---------------|---------------|---------------|---------------|---------------|
+|ANN|0.77|0.53|0.76|0.75|0.76|
+|DT|0.74|0.61|0.73|0.68|0.66|
+|SVM|0.74|0.62|0.74|0.74|0.75|
+|KNN|0.73|0.61|0.72|0.71|0.71|
+|NB|0.74|0.66|0.75|0.74|0.73|
+|RF|0.75|0.56|0.75|0.76|0.73|
 
