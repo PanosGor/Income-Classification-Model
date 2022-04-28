@@ -11,7 +11,7 @@ Three different datasets were provided for the classification part of this proje
 - test-project.data
 - train-project.data
 - unlabeled-project.data
-- 
+
 The preprocessing phase includes all the steps in order to clear the datasets from duplicate values null values and prepare it for the model training and testing phase.
 
 *Starting with the train-project.data first part was to check the dataset*
@@ -177,6 +177,22 @@ More specifically the following combinations of hyperparameters were tried for e
 -	'activation': ['tanh', 'relu']
 -	'max_iter':[200,400]
 
+*DT (Decision Tree)*
+-	'criterion': ['gini', 'entropy']
+-	'max_depth': [10, 100, None]
+
+*SVM (Support Vector Machine)*
+-	'C': [10,100]
+-	'kernel': ['rbf', 'linear', 'sigmoid']
+
+*KNN(K- Nearest Neighbors)*
+-	n_neighbors=range(1,11)
+
+*NB (Naïve Bayes)*
+-	No hyperparameter was chosen for NB as it is a really simple model and does not require fine tuning with regards to its hyperparameters
+
+*RF (Random Forest)*
+-	'n_estimators':[5,10,25]
 
 
 
