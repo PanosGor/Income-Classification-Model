@@ -1,5 +1,5 @@
 # Income-Classification-Model
-A Semi-Supervised classification model predicting if an individual's annual income is more or less than $50K
+A Semi-Supervised classification model made in Python, predicting if an individual's annual income is more or less than $50K
 
 ## Goal
 
